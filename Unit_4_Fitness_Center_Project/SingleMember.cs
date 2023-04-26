@@ -15,11 +15,6 @@ namespace Unit_4_Fitness_Center_Project
             this.Name = Name;
             Bill = 10;
         }
-        public SingleMember(Club Club)
-        {
-            this.Club = Club;
-            Bill = 10;
-        }
         public SingleMember(string Name, Club Club)
         {
             this.Name = Name;

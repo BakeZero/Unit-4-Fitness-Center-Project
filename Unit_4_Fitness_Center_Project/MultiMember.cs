@@ -15,11 +15,6 @@ namespace Unit_4_Fitness_Center_Project
             this.Name = Name;
             Bill = 25;
         }
-        public MultiMember(int MembershipPoints)
-        {
-            this.MembershipPoints = MembershipPoints;
-            Bill = 25;
-        }
         public MultiMember(string Name, int MembershipPoints)
         {
             this.MembershipPoints = MembershipPoints;
