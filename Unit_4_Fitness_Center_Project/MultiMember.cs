@@ -48,5 +48,9 @@ namespace Unit_4_Fitness_Center_Project
                 goto Prompt;
         }
 
+        public override void PrintMember()
+        {
+            Console.WriteLine($"{this.Name} is a multi-club member with {MembershipPoints} membership points");
+        }
     }
 }

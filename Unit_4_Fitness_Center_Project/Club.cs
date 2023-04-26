@@ -24,8 +24,7 @@ namespace Unit_4_Fitness_Center_Project
 
         public void DisplayClub()
         {
-            Console.WriteLine(ClubName.PadRight(10) + "\t\t" + ClubAddress);
+            Console.WriteLine("Club Name: " + ClubName.PadRight(20) + "\tClub Address: " + ClubAddress);
         }
-
     }
 }

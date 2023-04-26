@@ -12,5 +12,6 @@ namespace Unit_4_Fitness_Center_Project
         public double Bill;
         public abstract void CheckIn(Club club);
         public abstract void GenerateBill();
+        public abstract void PrintMember();
     }
 }

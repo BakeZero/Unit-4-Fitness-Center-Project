@@ -46,5 +46,9 @@ namespace Unit_4_Fitness_Center_Project
             Console.WriteLine($"Your bill is {Bill:c}");
         }
 
+        public override void PrintMember()
+        {
+            Console.WriteLine($"{this.Name} is a single-club member of {Club.ClubName}");
+        }
     }
 }
