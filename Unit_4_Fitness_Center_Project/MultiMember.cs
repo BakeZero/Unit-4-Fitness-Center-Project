@@ -8,7 +8,7 @@ namespace Unit_4_Fitness_Center_Project
 {
     internal class MultiMember : Member
     {
-        public int MembershipPoints;
+        public double MembershipPoints; // 10 membership points is worth $1 discount on bill
         public MultiMember(string Name) 
         {
             MembershipPoints = 0;
@@ -33,7 +33,7 @@ namespace Unit_4_Fitness_Center_Project
             Console.Write($"You have {MembershipPoints} membership points, would you like to apply them? (y/n): ");
             if (Console.ReadLine().ToLower() == "y")
             {
-                Console.WriteLine($"Your bill after applying membership points is {(Bill - MembershipPoints/100):c}");
+                Console.WriteLine($"Your bill after applying membership points is {(Bill - MembershipPoints/10):c}");
             }
             else if (Console.ReadLine().ToLower() == "n")
             {
@@ -46,6 +46,11 @@ namespace Unit_4_Fitness_Center_Project
         public override void PrintMember()
         {
             Console.WriteLine($"{this.Name} is a multi-club member with {MembershipPoints} membership points");
+        }
+
+        public override double GetPoints() 
+        { 
+            return MembershipPoints;
         }
     }
 }

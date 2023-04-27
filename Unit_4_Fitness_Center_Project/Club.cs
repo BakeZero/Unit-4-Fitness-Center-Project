@@ -22,6 +22,7 @@ namespace Unit_4_Fitness_Center_Project
             this.ClubAddress = ClubAddress;
         }
 
+        // Display club information
         public void DisplayClub()
         {
             Console.WriteLine("Club Name: " + ClubName.PadRight(20) + "\tClub Address: " + ClubAddress);

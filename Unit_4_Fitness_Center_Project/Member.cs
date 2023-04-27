@@ -13,5 +13,10 @@ namespace Unit_4_Fitness_Center_Project
         public abstract void CheckIn(Club club);
         public abstract void GenerateBill();
         public abstract void PrintMember();
+
+        // Used purely for data extraction in IO
+        public virtual Club GetClub() { return new Club(); }
+        // Used purely for data extraction in IO
+        public virtual double GetPoints() { return 0; }
     }
 }

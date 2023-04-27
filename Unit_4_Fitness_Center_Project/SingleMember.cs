@@ -22,11 +22,6 @@ namespace Unit_4_Fitness_Center_Project
             Bill = 10;
         }
 
-        public void DesignateClub(Club Club)
-        {
-            this.Club = Club;
-        }
-
         public override void CheckIn(Club club)
         {
             
@@ -44,6 +39,11 @@ namespace Unit_4_Fitness_Center_Project
         public override void PrintMember()
         {
             Console.WriteLine($"{this.Name} is a single-club member of {Club.ClubName}");
+        }
+
+        public override Club GetClub() 
+        { 
+            return Club; 
         }
     }
 }

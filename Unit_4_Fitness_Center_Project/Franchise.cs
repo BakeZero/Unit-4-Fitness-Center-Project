@@ -8,27 +8,10 @@ namespace Unit_4_Fitness_Center_Project
 {
     internal static class Franchise
     {
-        public static List<Club> Clubs = new List<Club>()
-        {
-            // Disclaimer: All addresses were randomly generated 
-            //       Club Name           Club Address
-            new Club("Planet Chirpus", "16630 N Scottsdale Rd"),
-            new Club("Planet Derpus", "931 Pacific Ave"),
-            new Club("Fit Nation", "323 E Washington St"),
-            new Club("Power World", "2823 Alta Mere Dr")
-        };
-        public static List<Member> ClubMembers = new List<Member>()
-        {
-            new SingleMember("Harry", Clubs[0]),
-            new SingleMember("Daniel", Clubs[1]),
-            new MultiMember("Tommy", 30),
-            new MultiMember("Macy"),
-            new SingleMember("Zayn", Clubs[0]),
-            new SingleMember("Nathan", Clubs[2]),
-            new SingleMember("Michael", Clubs[3]),
-            new MultiMember("Amy", 50)
-        };
+        public static List<Club> Clubs = new List<Club>(){};
+        public static List<Member> ClubMembers = new List<Member>(){};
 
+        // Print out a list of all members on record
         public static void DisplayAllMembers()
         {
             Console.Write("(");
@@ -69,6 +52,7 @@ namespace Unit_4_Fitness_Center_Project
             }
         }
 
+        // Display club information
         public static void DisplayAllClubs()
         {
             foreach (Club club in Clubs)
