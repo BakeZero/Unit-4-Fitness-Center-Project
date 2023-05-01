@@ -31,11 +31,12 @@ namespace Unit_4_Fitness_Center_Project
         {
             Prompt:
             Console.Write($"You have {MembershipPoints} membership points, would you like to apply them? (y/n): ");
-            if (Console.ReadLine().ToLower() == "y")
+            string s = Console.ReadLine();
+            if (s.ToLower() == "y")
             {
                 Console.WriteLine($"Your bill after applying membership points is {(Bill - MembershipPoints/10):c}");
             }
-            else if (Console.ReadLine().ToLower() == "n")
+            else if (s.ToLower() == "n")
             {
                 Console.WriteLine($"Your bill is {Bill:c}");
             }
